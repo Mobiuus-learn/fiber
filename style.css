@@ -34,3 +34,31 @@
 .aqua{
     background-color: aqua;
 }
+
+body{
+    display: flex;
+    width: 100vw;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+fieldset{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:10px;
+    width: 90vw;
+
+    border: 1px solid black;
+}
+#color-return{
+    margin: 0 auto;
+    position: relative;
+    top: 10px;
+    width: 80px;
+    height: 80px;
+    border:1px solid black;
+}
