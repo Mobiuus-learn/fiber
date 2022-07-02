@@ -1,3 +1,7 @@
+// @Criado por José Rodrigo
+// @Contribuição de Ubiratan Lima
+// @2022
+
 const cores = [
     { cor: 'verde', fibra: [1, 13, 25, 37, 49, 61, 73, 85, 97, 109, 121, 133] },
     { cor: 'amarelo', fibra: [2, 14, 26, 38, 50, 62, 74, 86, 98, 110, 122, 134] },
@@ -15,7 +19,8 @@ const cores = [
 const btnCalc = document.querySelector('#btn-calcColor')
 const inputFiber = document.querySelector("#in-fiber")
 const colorReturn = document.querySelector("#color-return")
-const classReset = document.querySelector('#class-reset');
+const classReset = document.querySelector('#class-reset')
+let textColor = document.querySelector('.text-color')
 let fiberColor
 
 
@@ -27,13 +32,16 @@ btnCalc.addEventListener('click', function () {
         for (el in cores[item].fibra) {
             if (cores[item].fibra[el] == fiberColor) {
                 console.log(cores[item].cor)
+                let sp = document.createElement('span')
+                textColor.appendChild(sp)
+                sp.innerHTML = `${cores[item].cor}`
                 colorReturn.classList.add(cores[item].cor)
             }
         }
     }
 }
 )
-// })
+
 classReset.addEventListener('click', function () {
     colorReturn.removeAttribute('class')
     inputFiber.value = ""
