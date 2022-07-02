@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fiber Code</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <fieldset>
-        <legend>Codigo de cores  fibra ótica</legend>
-        <input type="number" name="" id="in-fiber">
+      <input
+        type="number"
+        name=""
+        id="in-fiber"
+        placeholder="Informe a cor Fibra desejada:"
+      />
 
-        <button id="btn-calcColor">Qual a cor?</button>
-        <button id="class-reset">Resetar</button>
+      <button id="btn-calcColor">Qual a cor?</button>
+      <button id="class-reset">Resetar</button>
+      <span class="text-color">Sua fibra tem a cor:</span>
+      <div id="color-return"></div>
     </fieldset>
-    <span class="text-color">Sua fibra tem a cor:</span>
-    <div id="color-return"></div>
-
-    
-</body>
+  </body>
 </html>
