@@ -54,6 +54,11 @@ body{
     align-items: center;
     font-family:  'Poppins', sans-serif;
 }
+header{
+    position: relative;
+    top: 5%;
+    text-align: center;
+}
 fieldset{
     display: flex;
     align-items: center;
@@ -87,13 +92,22 @@ fieldset{
     border: none;
     color:white;
     border-radius: 10px;
+    text-align: center;
+    font-size: 1rem;
 }
 #btn-calcColor{
-    padding: 12px 24px;
+    padding: 10px 24px;
     background-color: var(--color-btn);
     border: none;
     color:white;
     border-radius: 10px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+#btn-calcColor i{
+    margin-left:10px;
+    font-size: 1rem;
 }
 
 
@@ -108,4 +122,14 @@ fieldset{
     box-shadow: -1px 5px 24px -6px rgba(0,0,0,0.75);
     -webkit-box-shadow: -1px 5px 24px -6px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 5px 24px -6px rgba(0,0,0,0.75);
+}
+.text-color{
+    position: relative;
+    top: 4%;
+    font-size:1rem
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    font-size:0.9rem ;
 }

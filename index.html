@@ -11,22 +11,39 @@
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
   </head>
   <body>
+    <header>
+      <h1>Fiber Code Color</h1>
+      <h4>Localizador de cores para Fibra Ótica</h4>
+    </header>
     <fieldset>
       <input
         type="number"
         name=""
         id="in-fiber"
-        placeholder="Informe a cor Fibra desejada:"
+        placeholder="Qual o número da fibra ?"
       />
 
-      <button id="btn-calcColor">Qual a cor?</button>
+      <button id="btn-calcColor">
+        Procurar<i class="fa-solid fa-magnifying-glass"></i>
+      </button>
       <button id="class-reset">Resetar</button>
       <span class="text-color">Sua fibra tem a cor:</span>
       <div id="color-return"></div>
     </fieldset>
+    <footer>
+      <span>&copy José Rodrigo</span>
+      <span>2022</span>
+    </footer>
   </body>
 </html>
