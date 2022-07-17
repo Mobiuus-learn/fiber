@@ -25,10 +25,15 @@ let textColor = document.querySelector('.text-color')
 let sp = document.createElement('span')
 let fiberColor
 
+const showErrorModal = function () {
 
+}
 
 btnCalc.addEventListener('click', function () {
     fiberColor = inputFiber.value
+    if (fiberColor > 144) {
+        showErroModal()
+    }
 
     for (item in cores) {
         for (el in cores[item].fibra) {

@@ -53,6 +53,7 @@ body{
     /* justify-content: center; */
     align-items: center;
     font-family:  'Poppins', sans-serif;
+    z-index: -10;
 }
 header{
     position: relative;
@@ -127,6 +128,32 @@ fieldset{
     position: relative;
     top: 4%;
     font-size:1rem
+}
+.error-modal{
+    width: 80vw;
+    height: 20vh;
+    top: 70vw;
+    left: 10vw;
+    background-color: aqua;
+    border: none;
+    border-radius: 10px;
+    padding: 40px 10px;
+    text-align: center;
+
+}
+.error-modal div{
+    z-index: -999;
+}
+
+.error-modal div h4{
+    text-align: center;
+    position: relative;
+    top: -10vw;
+    z-index: 20;
+}
+.error-modal span{
+    top: 20%;
+    position: relative;
 }
 footer{
     position: absolute;
