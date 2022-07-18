@@ -3,6 +3,7 @@
 // @2022
 
 
+
 const cores = [
     { cor: 'verde', fibra: [1, 13, 25, 37, 49, 61, 73, 85, 97, 109, 121, 133] },
     { cor: 'amarelo', fibra: [2, 14, 26, 38, 50, 62, 74, 86, 98, 110, 122, 134] },
@@ -23,30 +24,48 @@ const colorReturn = document.querySelector("#color-return")
 const classReset = document.querySelector('#class-reset')
 let textColor = document.querySelector('.text-color')
 let sp = document.createElement('span')
-let fiberColor
 let groupColor = document.querySelector(".group-color")
+let fiberColor
 
-const groupID = {
-    { cor: "verde" }
-}
-
+const groupID = [
+    { cor: "verde", grupo: 1 },
+    { cor: "amarelo", grupo: 2 },
+    { cor: "branco", grupo: 3 },
+    { cor: "azul", grupo: 4 },
+    { cor: "vermelho", grupo: 5 },
+    { cor: "violeta", grupo: 6 },
+    { cor: "marron", grupo: 7 },
+    { cor: "rosa", grupo: 8 },
+    { cor: "preto", grupo: 9 },
+    { cor: "cinza", grupo: 10 },
+    { cor: "laranja", grupo: 11 },
+    { cor: "aqua", grupo: 12 }
+]
 btnCalc.addEventListener('click', function () {
     fiberColor = inputFiber.value
-    if (fiberColor > 144) {
-        showErroModal()
-    }
+
 
     for (item in cores) {
-        for (el in cores[item].fibra) {
-            if (cores[item].fibra[el] == fiberColor) {
+        for (index in cores[item].fibra) {
+            if (cores[item].fibra[index] == fiberColor) {
                 textColor.appendChild(sp)
                 sp.innerHTML = ` ${cores[item].cor}`
                 colorReturn.classList.add(cores[item].cor)
-
+                // // console.log(el)
+                // if (index == 0) {
+                //     console.log('verde', index)
+                //     groupColor.classList.add(groupID[0].cor)
+                // }
+                // if (index == 1) {
+                //     console.log('amarelo', index)
+                //     groupColor.classList.add(groupID[1].cor)
+                // }
             }
+
         }
     }
 }
+
 )
 
 classReset.addEventListener('click', function () {
