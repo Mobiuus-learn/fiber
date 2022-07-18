@@ -24,9 +24,10 @@ const classReset = document.querySelector('#class-reset')
 let textColor = document.querySelector('.text-color')
 let sp = document.createElement('span')
 let fiberColor
+let groupColor = document.querySelector(".group-color")
 
-const showErrorModal = function () {
-
+const groupID = {
+    { cor: "verde" }
 }
 
 btnCalc.addEventListener('click', function () {
@@ -38,10 +39,10 @@ btnCalc.addEventListener('click', function () {
     for (item in cores) {
         for (el in cores[item].fibra) {
             if (cores[item].fibra[el] == fiberColor) {
-                // console.log(cores[item].cor)
                 textColor.appendChild(sp)
                 sp.innerHTML = ` ${cores[item].cor}`
                 colorReturn.classList.add(cores[item].cor)
+
             }
         }
     }
