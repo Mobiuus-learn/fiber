@@ -116,5 +116,6 @@ classReset.addEventListener('click', function () {
     groupColor.removeAttribute('class')
     inputFiber.value = ""
     sp.innerHTML = ""
+    textGroup.innerHTML = ""
 
 })
