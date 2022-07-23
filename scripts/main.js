@@ -1,6 +1,7 @@
 // @Criado por José Rodrigo
 // @Contribuição de Ubiratan Lima
 // @2022
+
 let sp = document.createElement('span')
 let textGroup = document.createElement('span')
 
@@ -8,6 +9,8 @@ const btnCalc = document.querySelector('#btn-calcColor')
 const inputFiber = document.querySelector("#in-fiber")
 const colorReturn = document.querySelector("#color-return")
 const classReset = document.querySelector('#class-reset')
+
+
 let textColor = document.querySelector('.text-color')
 let groupColor = document.querySelector("#group-color")
 let groupReturn = document.querySelector('.group-return')
@@ -42,7 +45,6 @@ btnCalc.addEventListener('click', function () {
                 colorReturn.classList.add(cores[item].cor)
                 if (cores[item].fibra[index] >= 1 && cores[item].fibra[index] <= 12) {
                     groupColor.classList.add("verde")
-                    // let textGroup = document.createElement('span')
                     textGroup.innerHTML = 'verde'
                     groupReturn.appendChild(textGroup)
                 }
