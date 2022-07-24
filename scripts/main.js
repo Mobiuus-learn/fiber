@@ -37,8 +37,8 @@ const cores = [
 
 btnCalc.addEventListener('click', function () {
     fiberColor = inputFiber.value
-    for (let item of cores) {
-        for (let index in cores[item].fibra) {
+    for (item in cores) {
+        for (index in cores[item].fibra) {
             if (cores[item].fibra[index] == fiberColor) {
                 textColor.appendChild(sp)
                 sp.innerHTML = ` ${cores[item].cor}`
