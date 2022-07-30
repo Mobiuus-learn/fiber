@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fiber Code</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./scripts/main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Fiber Code Color</h1>
+      <h4>Localizador de cores para Fibra Ótica</h4>
+    </header>
+    <fieldset>
+      <label class="label-fiber" for="in-fiber">Fibra desejada</label>
+      <input
+        type="number"
+        name="in-fiber"
+        id="in-fiber"
+        placeholder="Informe a Fibra desejada"
+      />
+
+      <button id="btn-calcColor">Procurar</button>
+      <button id="class-reset">Resetar</button>
+      <div class="return">
+        <span class="text-color">Sua fibra tem a cor:</span>
+        <div id="color-return"></div>
+        <span class="group-return">Sua fibra pertence ao grupo: </span>
+        <div id="group-color"></div>
+      </div>
+    </fieldset>
+    <!-- <footer>
+      <span>&copy José Rodrigo</span>
+      <span>2022</span>
+    </footer> -->
+  </body>
+</html>
