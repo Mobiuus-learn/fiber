@@ -16,19 +16,6 @@ let groupColor = document.querySelector("#group-color")
 let groupReturn = document.querySelector('.group-return')
 let fiberColor
 
-
-let verde = { menor: 1, maior: 139 }
-let amarelo = { menor: 2, maior: 140 }
-let branco = { menor: 3, maior: 141 }
-let azul = { menor: 4, maior: 142 }
-let vermelho = { menor: 5, maior: 143 }
-let violeta = { menor: 0, maior: 0 }
-
-
-
-
-
-
 btnCalc.addEventListener('click', function () {
     fiberColor = inputFiber.value
     let fiber = fiberColor % 6
@@ -40,6 +27,9 @@ btnCalc.addEventListener('click', function () {
             colorReturn.classList.add('verde')
             textColor.appendChild(sp)
             sp.innerHTML = "verde"
+            groupColor.classList.add('verde')
+            groupReturn.appendChild(textGroup)
+            textGroup.innerHTML = 'verde'
             break;
         case 2:
             colorReturn.classList.add('amarelo')
@@ -56,50 +46,60 @@ btnCalc.addEventListener('click', function () {
             textColor.appendChild(sp)
             sp.innerHTML = "azul"
             break;
-        // case 5:
-        //     colorReturn.classList.add('vermelho')
-        //     textColor.appendChild(sp)
-        //     sp.innerHTML = "vermelho"
-        //     break;
-        // case 0:
-        //     colorReturn.classList.add('violeta')
-        //     textColor.appendChild(sp)
-        //     sp.innerHTML = "violeta"
-        //     break;
+        case 5:
+            colorReturn.classList.add('vermelho')
+            textColor.appendChild(sp)
+            sp.innerHTML = "vermelho"
+            break;
+        case 0:
+            colorReturn.classList.add('violeta')
+            textColor.appendChild(sp)
+            sp.innerHTML = "violeta"
+            break;
         default:
             break;
     }
 
-    if (fiber >= verde.menor && fiber <= verde.maior) {
+    if (fiberColor >= 1 && fiberColor <= 6 ||
+        fiberColor >= 25 && fiberColor <= 30 ||
+        fiberColor >= 49 && fiberColor <= 54 ||
+        fiberColor >= 73 && fiberColor <= 78 ||
+        fiberColor >= 97 && fiberColor <= 102 ||
+        fiberColor >= 121 && fiberColor <= 126) {
         groupColor.classList.add('verde')
         groupReturn.appendChild(textGroup)
         textGroup.innerHTML = 'verde'
     }
-    if (fiber >= amarelo.menor && fiber <= amarelo.maior) {
+    if (fiberColor >= 7 && fiberColor <= 12 ||
+        fiberColor >= 31 && fiberColor <= 36 ||
+        fiberColor >= 55 && fiberColor <= 60 ||
+        fiberColor >= 79 && fiberColor <= 84 ||
+        fiberColor >= 103 && fiberColor <= 108 ||
+        fiberColor >= 127 && fiberColor <= 132) {
         groupColor.classList.add('amarelo')
         groupReturn.appendChild(textGroup)
         textGroup.innerHTML = 'amarelo'
     }
-    if (fiber >= branco.menor && fiber <= branco.maior) {
+    if (fiberColor >= 13 && fiberColor <= 18 ||
+        fiberColor >= 37 && fiberColor <= 42 ||
+        fiberColor >= 61 && fiberColor <= 66 ||
+        fiberColor >= 85 && fiberColor <= 90 ||
+        fiberColor >= 109 && fiberColor <= 114 ||
+        fiberColor >= 133 && fiberColor <= 138) {
         groupColor.classList.add('branco')
         groupReturn.appendChild(textGroup)
         textGroup.innerHTML = 'branco'
     }
-    if (fiber >= azul.menor && fiber <= azul.maior) {
+    if (fiberColor >= 19 && fiberColor <= 24 ||
+        fiberColor >= 43 && fiberColor <= 48 ||
+        fiberColor >= 67 && fiberColor <= 72 ||
+        fiberColor >= 91 && fiberColor <= 96 ||
+        fiberColor >= 115 && fiberColor <= 120 ||
+        fiberColor >= 139 && fiberColor <= 144) {
         groupColor.classList.add('azul')
         groupReturn.appendChild(textGroup)
         textGroup.innerHTML = 'azul'
     }
-    // if (fiber >= vermelho.menor && fiber <= vermelho.maior) {
-    //     groupColor.classList.add('vermelho')
-    //     groupReturn.appendChild(textGroup)
-    //     textGroup.innerHTML = 'vermelho'
-    // }
-    // if (fiber == 0) {
-    //     groupColor.classList.add('violeta')
-    //     groupReturn.appendChild(textGroup)
-    //     textGroup.innerHTML = 'violeta'
-    // }
 
 }
 
