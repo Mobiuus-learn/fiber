@@ -33,41 +33,31 @@ btnCalc.addEventListener('click', function () {
             colorReturn.classList.add('amarelo')
             textColor.appendChild(sp)
             sp.innerHTML = "amarelo"
-            groupColor.classList.add('amarelo')
-            groupReturn.appendChild(textGroup)
-            textGroup.innerHTML = 'amarelo'
+
             break;
         case 3:
             colorReturn.classList.add('branco')
             textColor.appendChild(sp)
             sp.innerHTML = "branco"
-            groupColor.classList.add('branco')
-            groupReturn.appendChild(textGroup)
-            textGroup.innerHTML = 'branco'
+
             break;
         case 4:
             colorReturn.classList.add('azul')
             textColor.appendChild(sp)
             sp.innerHTML = "azul"
-            groupColor.classList.add('azul')
-            groupReturn.appendChild(textGroup)
-            textGroup.innerHTML = 'azul'
+
             break;
         case 5:
             colorReturn.classList.add('vermelho')
             textColor.appendChild(sp)
             sp.innerHTML = "vermelho"
-            groupColor.classList.add('vermelho')
-            groupReturn.appendChild(textGroup)
-            textGroup.innerHTML = 'vermelho'
+
             break;
         case 0:
             colorReturn.classList.add('violeta')
             textColor.appendChild(sp)
             sp.innerHTML = "violeta"
-            groupColor.classList.add('violeta')
-            groupReturn.appendChild(textGroup)
-            textGroup.innerHTML = 'violeta'
+
             break;
         default:
             break;
