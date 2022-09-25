@@ -45,19 +45,6 @@ header hr {
 
 }
 
-
-.padrao {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  position: relative;
-  top: 30%;
-}
-
-main {
-  position: relative;
-}
-
 .links-fo {
   position: relative;
   top: 20vw;

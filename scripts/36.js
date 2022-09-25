@@ -16,17 +16,36 @@ let groupColor = document.querySelector("#group-color")
 let groupReturn = document.querySelector('.group-return')
 let fiberColor
 
+
+const groupColorCheck = (rest)=>{
+    // calculo
+    rest = rest
+    if(rest === 1){
+        colorReturn.classList.add('verde')
+        textColor.appendChild(sp)
+        sp.innerHTML = "verde"
+    }
+
+        
+}
+// btnCalc.onclick(groupColorCheck())
+
+
+
 btnCalc.addEventListener('click', function () {
     fiberColor = inputFiber.value
     let fiber = fiberColor % 6
+    
+    groupColorCheck(fiber)
+
 
 
     // check fiber color
     switch (fiber) {
         case 1:
-            colorReturn.classList.add('verde')
-            textColor.appendChild(sp)
-            sp.innerHTML = "verde"
+            // colorReturn.classList.add('verde')
+            // textColor.appendChild(sp)
+            // sp.innerHTML = "verde"
 
             break;
         case 2:
