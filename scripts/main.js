@@ -74,7 +74,7 @@ btnCalc.addEventListener('click', function () {
                     groupReturn.appendChild(textGroup)
                 }
                 if (cores[item].fibra[index] >= 73 && cores[item].fibra[index] <= 84) {
-                    groupColor.classList.add("marron")
+                    groupColor.classList.add("marrom")
                     textGroup.innerHTML = 'marrom'
                     groupReturn.appendChild(textGroup)
                 }
